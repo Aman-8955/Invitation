@@ -11,39 +11,62 @@
             margin: 0;
             padding: 0;
         }
-        #backmain {
-            background-image: url("img/bg.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center center;
-            filter: blur(3px);
-            width: 100vw;
-            height: 100vh;
+
+        @media only screen and (min-width: 800px) {
+            #frontmain {
+                margin: auto;
+                width: 30vw;
+                height: 100vh;
+            }
+
+            img {
+                width: 30vw;
+                height: 100vh;
+            }
         }
 
-        #frontmain {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-image: url("img/SobhasariaM.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: contain;
-            background-position: center center;
-            z-index: 1;
+        @media only screen and (max-width: 800px) {
+            #frontmain {
+                margin: auto;
+                width: 60vw;
+                height: 100vh;
+            }
+
+            img {
+                width: 60vw;
+                height: 100vh;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            #frontmain {
+                margin: auto;
+                width: 80vw;
+                height: 100vh;
+            }
+
+            img {
+                width: 80vw;
+                height: 100vh;
+            }
+        }
+        @media only screen and (max-width: 450px) {
+            #frontmain {
+                width: 100vw;
+                height: 100vh;
+            }
+
+            img {
+                width: 100vw;
+                height: 100vh;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div id="backmain">
-
-    </div>
     <div id="frontmain">
-
+        <img src="img/Acard.svg" alt="img">
     </div>
 </body>
 
